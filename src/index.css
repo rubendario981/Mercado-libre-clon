@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.remove-bg{
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
