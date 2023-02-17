@@ -2,6 +2,7 @@ import { GoLocation } from 'react-icons/go';
 import { FaCartPlus } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import IOptionsHeader from '../interfaces/IOptionsHeader';
+import CategoriesSubheader from './CategoriesSubheader';
 
 const Subheader = () => {
   const options: IOptionsHeader[] = [
@@ -14,12 +15,13 @@ const Subheader = () => {
   ]
   
   return (
-    <div className="flex text-xs pt-6 pb-2">
+    <div className="flex text-xs pt-6">
       <div className="w-2/12 inline-flex gap-1 items-center">
         <GoLocation />
         <span className='inline-flex'>Selecciona tu ubicacion </span>
       </div>
-      <p className="text-neutral-600 hover:text-neutral-700">Categorias</p>
+      {/* <p className="text-neutral-600 hover:text-neutral-700">Categorias</p> */}
+      <CategoriesSubheader />
       <div className="w-5/12 flex gap-2 ml-3">
         {options.map((opt, index) => (
           <Link to={opt.link} key={index} target="_blank"

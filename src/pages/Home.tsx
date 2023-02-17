@@ -1,9 +1,9 @@
-import Header from "../components/Header"
+import CarouselPromo from "../components/CarouselPromo"
 
 const Home = () => {
   return (
     <div>
-      Home page
+      <CarouselPromo />
     </div>
   )
 }

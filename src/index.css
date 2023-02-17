@@ -6,3 +6,16 @@
   filter: brightness(1.1);
   mix-blend-mode: multiply;
 }
+
+.arrow-top:after{
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 26%;
+  margin-left: 9px;
+  width: 16px;
+  height: 16px;
+  transform: rotate(45deg);
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
